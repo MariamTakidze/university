@@ -1,6 +1,5 @@
 package com.solvd.utils;
 import java.io.FileInputStream;
-import java.io.FilterInputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,8 +16,7 @@ public class DBUtil {
     static{
         try {
             properties = new Properties();
-            FileInputStream f=new FileInputStream("C:\\Users\\MTakidze\\IdeaProjects\\UniversityGang\\src\\main\\resources\\mySQLcreds.properties");
-            properties.load(f);
+            properties.load(new FileInputStream("C:\\Users\\MTakidze\\IdeaProjects\\UniversityGang\\src\\main\\resources\\mySQLcreds.properties"));
             Class.forName(properties.getProperty(DB_DRIVER_CLASS));
             connection = DriverManager.getConnection(properties.getProperty(DB_URL),properties.getProperty(DB_USERNAME) , properties.getProperty(DB_PASSWORD) );
         } catch (ClassNotFoundException | SQLException | IOException e) {
@@ -26,7 +24,7 @@ public class DBUtil {
         }
     }
 
-    public static Connection getConnection() throws SQLException{
+    public static Connection getConnection(){
         return connection;
     }
 }
