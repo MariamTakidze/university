@@ -1,4 +1,4 @@
-package com.solvd.dao.mySql;
+package com.solvd.dao.jdbc;
 
 import com.solvd.dao.IStudentDAO;
 import com.solvd.models.Students;
@@ -6,7 +6,6 @@ import com.solvd.utils.DBUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.Statement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -17,7 +16,7 @@ public class StudentDAO extends AbstractMySQLDAO implements IStudentDAO {
         Connection con = DBUtil.getConnection();
         Students student = null;
 
-        String sql = "SELECT Student_id, Student_name, Student_surname, Student_email,age FROM students WHERE Student_id = ?";
+        String sql = "SELECT * FROM students WHERE Student_id = ?";
 
         PreparedStatement ps = con.prepareStatement(sql);
 
@@ -27,20 +26,28 @@ public class StudentDAO extends AbstractMySQLDAO implements IStudentDAO {
 
         while (rs.next()) {
 
-            long student_id = rs.getInt("Student_id");
+            Long studentId = rs.getLong("Student_id");
             String firstName = rs.getString("Student_name");
             String lastName = rs.getString("Student_surname");
             String email = rs.getString("Student_email");
             int age = rs.getInt("age");
+            System.out.println(lastName);
 
-
-           student = new Students(student_id, firstName, lastName, email, age);
+           student = new Students(studentId, firstName, lastName, email, age);
+//            student = new Students(studentId, firstName, lastName, email, age);
+//            student.setId(studentId);
+//            student.setStudentName(firstName);
+//            student.setStudentLastname(lastName);
+//            student.setStudentEmail(email);
+//            student.setAge(age);
         }
 
-       DBUtil.closeResultSet(rs);
-        DBUtil.closePreparedStatement(ps);
-        DBUtil.closeConnection(con);
+//       DBUtil.closeResultSet(rs);
+//        DBUtil.closePreparedStatement(ps);
+//        DBUtil.closeConnection(con);
+
         return student;
+
     }
 
     @Override
@@ -60,6 +67,19 @@ public class StudentDAO extends AbstractMySQLDAO implements IStudentDAO {
 
     @Override
     public void update(Students students) throws SQLException {
+        String SQL = "UPDATE Students set Student_email=? WHERE Student_id=?;";
+        Connection connection = DBUtil.getConnection();
+        PreparedStatement ps = connection.prepareStatement(SQL);
+
+            ps.setString(1,students.getStudentEmail());
+            ps.setLong(2,students.getId());
+
+            int executeUpdate = ps.executeUpdate();
+
+            if(executeUpdate ==1){
+                System.out.println("Student email is updated..");
+            }
+
 
     }
 

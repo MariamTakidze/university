@@ -1,4 +1,4 @@
-package com.solvd.dao.mySql;
+package com.solvd.dao.jdbc;
 
 import com.solvd.dao.ILecturerDAO;
 import com.solvd.models.Lecturers;

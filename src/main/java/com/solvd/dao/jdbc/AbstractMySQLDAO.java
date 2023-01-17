@@ -1,4 +1,4 @@
-package com.solvd.dao.mySql;
+package com.solvd.dao.jdbc;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 public abstract class AbstractMySQLDAO {

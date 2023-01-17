@@ -1,13 +1,10 @@
 package com.solvd;
 
 import com.solvd.dao.IStudentDAO;
-import com.solvd.dao.mySql.StudentDAO;
+import com.solvd.dao.jdbc.StudentDAO;
 import com.solvd.models.Students;
-import com.solvd.utils.DBUtil;
 
-import java.sql.Connection;
 import java.sql.SQLException;
-import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -21,7 +18,15 @@ public class Main {
 //        }
 //
         IStudentDAO iStudentDAO = new StudentDAO();
+        //get
         Students student = iStudentDAO.get(1L);
-        System.out.println(student);
+
+        //update
+        Students updateStudent = new Students(1L,"Giordano","Brunno","lola@123.gmail.com",35);
+        iStudentDAO.update(updateStudent);
+
+        System.out.println(student.getStudentName());
+        System.out.println(updateStudent.getStudentEmail());
+
     }
 }
