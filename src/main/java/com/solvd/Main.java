@@ -2,11 +2,10 @@ package com.solvd;
 
 import com.solvd.dao.IStudentDAO;
 import com.solvd.dao.jdbc.StudentDAO;
+import com.solvd.dao.jdbc.StudentDAOPS;
 import com.solvd.models.Students;
 
 import java.sql.SQLException;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -20,7 +19,7 @@ public class Main {
 //            System.out.println("Failed to connect.");
 //        }
 //
-        IStudentDAO iStudentDAO = new StudentDAO();
+//        IStudentDAO iStudentDAO = new StudentDAOPS();
 
 
         //get
@@ -36,13 +35,22 @@ public class Main {
 
         //getall
 
-            List<Students> studentsList = iStudentDAO.getAll();
-            studentsList.forEach(System.out::println);
+//            List<Students> studentsList = iStudentDAO.getAll();
+//            studentsList.forEach(System.out::println);
 
-//          System.out.println(deleteStudent.getStudentLastname());
+//         System.out.println(deleteStudent.getStudentLastname());
 //
 //        System.out.println(student.getStudentName());
 //        System.out.println(updateStudent.getStudentEmail());
-        System.out.println(studentsList);
+//        System.out.println(studentsList);
+
+
+//        --------------------------with pooling
+        //get
+        IStudentDAO iStudentDAO = new StudentDAO();
+        Students student =iStudentDAO.get(3L);
+
+
+        //
     }
 }
