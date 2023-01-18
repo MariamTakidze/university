@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDAO extends AbstractMySQLDAO implements IStudentDAO {
@@ -52,7 +53,32 @@ public class StudentDAO extends AbstractMySQLDAO implements IStudentDAO {
 
     @Override
     public List<Students> getAll() throws SQLException {
-        return null;
+
+
+        Connection con = DBUtil.getConnection();
+        List <Students> studentList = new ArrayList<>();
+        Students student = null;
+
+        String sql = "SELECT Student_id,Student_name,Student_surname,student_email, age FROM students ";
+
+        PreparedStatement ps = con.prepareStatement(sql);
+
+
+        ResultSet rs = ps.executeQuery();
+
+        while (rs.next()) {
+
+            Long studentId = rs.getLong("Student_id");
+            String firstName = rs.getString("Student_name");
+            String lastName = rs.getString("Student_surname");
+            String email = rs.getString("Student_email");
+            int age = rs.getInt("age");
+
+
+            student = new Students(studentId, firstName, lastName, email, age);
+            studentList.add(student);
+        }
+        return studentList;
     }
 
     @Override

@@ -5,6 +5,9 @@ import com.solvd.dao.jdbc.StudentDAO;
 import com.solvd.models.Students;
 
 import java.sql.SQLException;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws SQLException {
@@ -18,6 +21,8 @@ public class Main {
 //        }
 //
         IStudentDAO iStudentDAO = new StudentDAO();
+
+
         //get
 //        Students student = iStudentDAO.get(1L);
 //
@@ -26,13 +31,18 @@ public class Main {
 //        iStudentDAO.update(updateStudent);
 
         //delete
-        Students deleteStudent = iStudentDAO.get(7L);
-        iStudentDAO.delete(deleteStudent);
+//        Students deleteStudent = iStudentDAO.get(7L);
+//        iStudentDAO.delete(deleteStudent);
+
+        //getall
+
+            List<Students> studentsList = iStudentDAO.getAll();
+            studentsList.forEach(System.out::println);
 
 //          System.out.println(deleteStudent.getStudentLastname());
 //
 //        System.out.println(student.getStudentName());
 //        System.out.println(updateStudent.getStudentEmail());
-
+        System.out.println(studentsList);
     }
 }
