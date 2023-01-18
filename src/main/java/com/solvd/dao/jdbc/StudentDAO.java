@@ -67,7 +67,7 @@ public class StudentDAO extends AbstractMySQLDAO implements IStudentDAO {
 
     @Override
     public void update(Students students) throws SQLException {
-        String SQL = "UPDATE Students set Student_email=? WHERE Student_id=?;";
+        String SQL = "UPDATE Students set Student_email=? WHERE Student_id=?";
         Connection connection = DBUtil.getConnection();
         PreparedStatement ps = connection.prepareStatement(SQL);
 
@@ -80,11 +80,22 @@ public class StudentDAO extends AbstractMySQLDAO implements IStudentDAO {
                 System.out.println("Student email is updated..");
             }
 
-
     }
 
     @Override
     public void delete(Students students) throws SQLException {
+        String SQL = "DELETE FROM Students WHERE Student_id = ?";
+        Connection connection = DBUtil.getConnection();
+        PreparedStatement ps= connection.prepareStatement(SQL);
+
+         ps.setLong(1,students.getId());
+         int executeUpdate = ps.executeUpdate();
+        if(executeUpdate ==7){
+            System.out.println("Student is deleted..");
+        }
+        DBUtil.closePreparedStatement(ps);
+        DBUtil.closeConnection(connection);
+
 
     }
 }

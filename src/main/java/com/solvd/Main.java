@@ -19,14 +19,20 @@ public class Main {
 //
         IStudentDAO iStudentDAO = new StudentDAO();
         //get
-        Students student = iStudentDAO.get(1L);
+//        Students student = iStudentDAO.get(1L);
+//
+//        //update
+//        Students updateStudent = new Students(1L,"Giordano","Brunno","lola@123.gmail.com",35);
+//        iStudentDAO.update(updateStudent);
 
-        //update
-        Students updateStudent = new Students(1L,"Giordano","Brunno","lola@123.gmail.com",35);
-        iStudentDAO.update(updateStudent);
+        //delete
+        Students deleteStudent = iStudentDAO.get(7L);
+        iStudentDAO.delete(deleteStudent);
 
-        System.out.println(student.getStudentName());
-        System.out.println(updateStudent.getStudentEmail());
+//          System.out.println(deleteStudent.getStudentLastname());
+//
+//        System.out.println(student.getStudentName());
+//        System.out.println(updateStudent.getStudentEmail());
 
     }
 }
