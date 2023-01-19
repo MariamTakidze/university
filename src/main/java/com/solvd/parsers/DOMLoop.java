@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class DOMLoop {
     private static final Logger LOGGER = LogManager.getLogger(DOMLoop.class);
-    private static final String FILENAME = "C:\\Users\\MTakidze\\IdeaProjects\\UniversityGang\\src\\main\\resources\\xmlFiles\\Students.xml";
+    private static final String FILENAME = "C:\\Users\\MTakidze\\IdeaProjects\\UniversityGang\\src\\main\\resources\\xmlFiles\\University.xml";
     public static void main(String[] args) {
 
         // Instantiate the Factory
