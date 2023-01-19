@@ -4,11 +4,14 @@ import com.solvd.dao.IStudentDAO;
 import com.solvd.dao.jdbc.StudentDAO;
 import com.solvd.dao.jdbc.StudentDAOPS;
 import com.solvd.models.Students;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.SQLException;
 import java.util.List;
 
 public class Main {
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
     public static void main(String[] args) throws SQLException {
 //        Connection con = DBUtil.getConnection();
 //
@@ -39,18 +42,29 @@ public class Main {
 //            studentsList.forEach(System.out::println);
 
 //         System.out.println(deleteStudent.getStudentLastname());
-//
 //        System.out.println(student.getStudentName());
 //        System.out.println(updateStudent.getStudentEmail());
 //        System.out.println(studentsList);
 
 
 //        --------------------------with pooling
-        //get
         IStudentDAO iStudentDAO = new StudentDAO();
-        Students student =iStudentDAO.get(3L);
+        //get
+//        Students student =iStudentDAO.get(3L);
 
 
-        //
+        //getAll
+//        List<Students> studentsList = iStudentDAO.getAll();
+//        studentsList.forEach(System.out::println);
+//        for (Students s: iStudentDAO.getAll()) {
+//            LOGGER.info(s);
+//        }
+
+        //update
+//        Students updateStudent = new Students(1L,"Giordano","Brunno","lolita@123.gmail.com",35);
+//        iStudentDAO.update(updateStudent);
+
+        //delete
+//        iStudentDAO.delete(iStudentDAO.get(6L));
     }
 }
