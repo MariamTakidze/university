@@ -66,5 +66,8 @@ public class Main {
 
         //delete
 //        iStudentDAO.delete(iStudentDAO.get(6L));
+
+
+
     }
 }
