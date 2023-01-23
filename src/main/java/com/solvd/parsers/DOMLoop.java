@@ -27,6 +27,7 @@ public class DOMLoop {
             // read from a project's resources folder
             Document doc = db.parse(FILENAME);
 
+            doc.getDocumentElement().normalize();
             LOGGER.info("Root Element :" + doc.getDocumentElement().getNodeName());
             LOGGER.info("------");
 

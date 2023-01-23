@@ -1,11 +1,19 @@
 package com.solvd.models;
+import javax.xml.bind.annotation.*;
+@XmlRootElement(name = "student")
 
 public class Students {
+
     private Long id;
+
     private String studentName;
+
     private String studentLastname;
+
     private String studentEmail;
+
     private int age;
+
 
     public Students(Long id, String studentName, String studentLastname, String studentEmail, int age) {
         this.id = id;
@@ -15,14 +23,19 @@ public class Students {
         this.age = age;
     }
 
+    public Students() {
+
+    }
+
+
     public Long getId() {
         return id;
     }
-
+    @XmlAttribute
     public void setId(Long id) {
         this.id = id;
     }
-
+    @XmlElement
     public String getStudentName() {
         return studentName;
     }
@@ -30,7 +43,7 @@ public class Students {
     public void setStudentName(String studentName) {
         this.studentName = studentName;
     }
-
+    @XmlElement
     public String getStudentLastname() {
         return studentLastname;
     }
@@ -38,7 +51,7 @@ public class Students {
     public void setStudentLastname(String studentLastname) {
         this.studentLastname = studentLastname;
     }
-
+    @XmlElement
     public String getStudentEmail() {
         return studentEmail;
     }
@@ -46,7 +59,7 @@ public class Students {
     public void setStudentEmail(String studentEmail) {
         this.studentEmail = studentEmail;
     }
-
+    @XmlElement
     public int getAge() {
         return age;
     }
