@@ -1,0 +1,8 @@
+2023-01-18 15:49:09,062 INFO c.s.u.ConnectionPooling [main] The connection was retrieved: com.mysql.cj.jdbc.ConnectionImpl@14dda234
+2023-01-18 15:49:09,078 INFO c.s.u.ConnectionPooling [main] Putting the connection back to Connection pooling: com.mysql.cj.jdbc.ConnectionImpl@14dda234
+2023-01-18 15:49:09,079 INFO c.s.Main [main] com.solvd.models.Students@73163d48
+2023-01-18 15:49:09,079 INFO c.s.Main [main] com.solvd.models.Students@58c34bb3
+2023-01-18 15:49:09,079 INFO c.s.Main [main] com.solvd.models.Students@56a4479a
+2023-01-18 15:49:09,079 INFO c.s.Main [main] com.solvd.models.Students@62163b39
+2023-01-18 15:49:09,080 INFO c.s.Main [main] com.solvd.models.Students@20a8a64e
+2023-01-18 15:49:09,080 INFO c.s.Main [main] com.solvd.models.Students@62f4ff3b

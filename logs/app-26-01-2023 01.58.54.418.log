@@ -1,0 +1,44 @@
+2023-01-26 01:58:54,658 ERROR c.s.j.LecturerJAXB [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 6 counts of IllegalAnnotationExceptions
+Class has two properties of the same name "age"
+	this problem is related to the following location:
+		at public int com.solvd.models.Lecturers.getAge()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private int com.solvd.models.Lecturers.age
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "email"
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getEmail()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.email
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "firstName"
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getFirstName()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.firstName
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public java.lang.Long com.solvd.models.Lecturers.getId()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.Long com.solvd.models.Lecturers.id
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "modules"
+	this problem is related to the following location:
+		at public java.util.List com.solvd.models.Lecturers.getModules()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.util.List com.solvd.models.Lecturers.modules
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.util.Date com.solvd.models.Lecturers.getStartDate()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.util.Date com.solvd.models.Lecturers.startDate
+		at com.solvd.models.Lecturers
+

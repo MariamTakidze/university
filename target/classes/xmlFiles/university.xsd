@@ -1,0 +1,60 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Universitysquad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="University">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="universitytitle"/>
+                            <xs:element type="xs:string" name="universityAddress"/>
+                            <xs:element type="xs:string" name="universityemail"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="student">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="firstname"/>
+                            <xs:element type="xs:string" name="lastname"/>
+                            <xs:element type="xs:string" name="email"/>
+                            <xs:element type="xs:byte" name="age"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Session">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="sessiondate"/>
+                            <xs:element type="xs:string" name="sessiontime"/>
+                            <xs:element name="course">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="coursetitle"/>
+                                        <xs:element name="Modules">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="module" maxOccurs="unbounded" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type="xs:string" name="moduletitle"/>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:short" name="id"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

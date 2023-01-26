@@ -1,0 +1,30 @@
+<?xml version = "1.0"?>
+<Universitysquad>
+    <University id="1">
+        <universitytitle>USC</universitytitle>
+        <universityAddress>Santiago de Compostela</universityAddress>
+        <universityemail>usc@edu.com</universityemail>
+    </University>
+    <student id = "1">
+        <firstname>Karl</firstname>
+        <lastname>Benz</lastname>
+        <email>karlbenz@gmail.com</email>
+        <age>29</age>
+    </student>
+    <Session id = "17">
+        <sessiondate>19/01/2023</sessiondate>
+        <sessiontime>18:00</sessiontime>
+        <course id="701">
+            <coursetitle>Lexicography</coursetitle>
+            <Modules>
+                <module id ="3">
+                    <moduletitle>Metalexicography</moduletitle>
+                </module>
+                <module id ="4">
+                    <moduletitle>Computational Lexicography</moduletitle>
+                </module>
+            </Modules>
+        </course>
+    </Session>
+
+</Universitysquad>

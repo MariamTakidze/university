@@ -1,0 +1,62 @@
+2023-01-19 12:38:29,526 INFO c.s.p.DOMLoop [main] Root Element :Universitysquad
+2023-01-19 12:38:29,528 INFO c.s.p.DOMLoop [main] ------
+2023-01-19 12:38:29,528 INFO c.s.p.DOMLoop [main] 
+Node Name =Universitysquad [OPEN]
+2023-01-19 12:38:29,529 INFO c.s.p.DOMLoop [main] Node Value =
+    
+        Karl
+        Benz
+        karlbenz@gmail.com
+        29
+    
+    
+        19/01/2023
+        18:00
+    
+
+
+2023-01-19 12:38:29,529 INFO c.s.p.DOMLoop [main] 
+Node Name =student [OPEN]
+2023-01-19 12:38:29,530 INFO c.s.p.DOMLoop [main] Node Value =
+        Karl
+        Benz
+        karlbenz@gmail.com
+        29
+    
+2023-01-19 12:38:29,530 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 12:38:29,530 INFO c.s.p.DOMLoop [main] attr value : 1
+2023-01-19 12:38:29,530 INFO c.s.p.DOMLoop [main] 
+Node Name =firstname [OPEN]
+2023-01-19 12:38:29,530 INFO c.s.p.DOMLoop [main] Node Value =Karl
+2023-01-19 12:38:29,531 INFO c.s.p.DOMLoop [main] Node Name =firstname [CLOSE]
+2023-01-19 12:38:29,531 INFO c.s.p.DOMLoop [main] 
+Node Name =lastname [OPEN]
+2023-01-19 12:38:29,531 INFO c.s.p.DOMLoop [main] Node Value =Benz
+2023-01-19 12:38:29,531 INFO c.s.p.DOMLoop [main] Node Name =lastname [CLOSE]
+2023-01-19 12:38:29,531 INFO c.s.p.DOMLoop [main] 
+Node Name =email [OPEN]
+2023-01-19 12:38:29,531 INFO c.s.p.DOMLoop [main] Node Value =karlbenz@gmail.com
+2023-01-19 12:38:29,531 INFO c.s.p.DOMLoop [main] Node Name =email [CLOSE]
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] 
+Node Name =age [OPEN]
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] Node Value =29
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] Node Name =age [CLOSE]
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] Node Name =student [CLOSE]
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] 
+Node Name =Session [OPEN]
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] Node Value =
+        19/01/2023
+        18:00
+    
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 12:38:29,532 INFO c.s.p.DOMLoop [main] attr value : 17
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] 
+Node Name =sessiondate [OPEN]
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] Node Value =19/01/2023
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] Node Name =sessiondate [CLOSE]
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] 
+Node Name =sessiontime [OPEN]
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] Node Value =18:00
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] Node Name =sessiontime [CLOSE]
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] Node Name =Session [CLOSE]
+2023-01-19 12:38:29,533 INFO c.s.p.DOMLoop [main] Node Name =Universitysquad [CLOSE]

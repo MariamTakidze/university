@@ -1,0 +1,20 @@
+2023-01-19 08:49:53,217 INFO c.s.p.DOM [main] Root Element :students
+2023-01-19 08:49:53,219 INFO c.s.p.DOM [main] ------
+2023-01-19 08:49:53,220 INFO c.s.p.DOM [main] Current Element :student
+2023-01-19 08:49:53,220 INFO c.s.p.DOM [main] Staff Id : 1
+2023-01-19 08:49:53,220 INFO c.s.p.DOM [main] First Name : Karl
+2023-01-19 08:49:53,220 INFO c.s.p.DOM [main] Last Name : Benz
+2023-01-19 08:49:53,221 INFO c.s.p.DOM [main] email : karlbenz@gmail.com
+2023-01-19 08:49:53,221 INFO c.s.p.DOM [main] age : 29
+2023-01-19 08:49:53,221 INFO c.s.p.DOM [main] Current Element :student
+2023-01-19 08:49:53,231 INFO c.s.p.DOM [main] Staff Id : 2
+2023-01-19 08:49:53,231 INFO c.s.p.DOM [main] First Name : Thomas Alva
+2023-01-19 08:49:53,231 INFO c.s.p.DOM [main] Last Name : Edison
+2023-01-19 08:49:53,231 INFO c.s.p.DOM [main] email : t.edison@yahoo.com
+2023-01-19 08:49:53,231 INFO c.s.p.DOM [main] age : 25
+2023-01-19 08:49:53,232 INFO c.s.p.DOM [main] Current Element :student
+2023-01-19 08:49:53,232 INFO c.s.p.DOM [main] Staff Id : 3
+2023-01-19 08:49:53,232 INFO c.s.p.DOM [main] First Name : George B
+2023-01-19 08:49:53,232 INFO c.s.p.DOM [main] Last Name : Grant
+2023-01-19 08:49:53,232 INFO c.s.p.DOM [main] email : grant.george@gmail.com
+2023-01-19 08:49:53,232 INFO c.s.p.DOM [main] age : 23

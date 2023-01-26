@@ -1,0 +1,97 @@
+2023-01-25 14:34:03,684 ERROR c.s.j.LecturerJAXB [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 16 counts of IllegalAnnotationExceptions
+Property id is present but not specified in @XmlType.propOrder
+	this problem is related to the following location:
+		at private java.lang.Long com.solvd.models.Lecturers.id
+		at com.solvd.models.Lecturers
+Property lastname is present but not specified in @XmlType.propOrder
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.lastname
+		at com.solvd.models.Lecturers
+Property startDate is present but not specified in @XmlType.propOrder
+	this problem is related to the following location:
+		at private java.util.Date com.solvd.models.Lecturers.startDate
+		at com.solvd.models.Lecturers
+There are two properties named "age" 
+	this problem is related to the following location:
+		at public int com.solvd.models.Lecturers.getAge()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private int com.solvd.models.Lecturers.age
+		at com.solvd.models.Lecturers
+There are two properties named "email" 
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getEmail()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.email
+		at com.solvd.models.Lecturers
+There are two properties named "firstName" 
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getFirstName()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.firstName
+		at com.solvd.models.Lecturers
+There are two properties named "modules" 
+	this problem is related to the following location:
+		at public java.util.List com.solvd.models.Lecturers.getModules()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.util.List com.solvd.models.Lecturers.modules
+		at com.solvd.models.Lecturers
+Property lastName appears in @XmlType.propOrder, but no such property exists. Maybe you meant lastname?
+	this problem is related to the following location:
+		at com.solvd.models.Lecturers
+Property date appears in @XmlType.propOrder, but no such property exists. Maybe you meant age?
+	this problem is related to the following location:
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "firstName"
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getFirstName()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.firstName
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "age"
+	this problem is related to the following location:
+		at public int com.solvd.models.Lecturers.getAge()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private int com.solvd.models.Lecturers.age
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "email"
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getEmail()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.email
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "modules"
+	this problem is related to the following location:
+		at public java.util.List com.solvd.models.Lecturers.getModules()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.util.List com.solvd.models.Lecturers.modules
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "id"
+	this problem is related to the following location:
+		at public java.lang.Long com.solvd.models.Lecturers.getId()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.Long com.solvd.models.Lecturers.id
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "lastname"
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getLastname()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.lang.String com.solvd.models.Lecturers.lastname
+		at com.solvd.models.Lecturers
+Class has two properties of the same name "startDate"
+	this problem is related to the following location:
+		at public java.util.Date com.solvd.models.Lecturers.getStartDate()
+		at com.solvd.models.Lecturers
+	this problem is related to the following location:
+		at private java.util.Date com.solvd.models.Lecturers.startDate
+		at com.solvd.models.Lecturers
+

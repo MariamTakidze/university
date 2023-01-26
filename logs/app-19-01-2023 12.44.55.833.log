@@ -1,0 +1,139 @@
+2023-01-19 12:44:55,984 INFO c.s.p.DOMLoop [main] Root Element :Universitysquad
+2023-01-19 12:44:55,986 INFO c.s.p.DOMLoop [main] ------
+2023-01-19 12:44:55,986 INFO c.s.p.DOMLoop [main] 
+Node Name =Universitysquad [OPEN]
+2023-01-19 12:44:55,987 INFO c.s.p.DOMLoop [main] Node Value =
+    
+        Karl
+        Benz
+        karlbenz@gmail.com
+        29
+    
+    
+        19/01/2023
+        18:00
+        
+            Lexicography
+            
+                
+                    Metalexicography
+                
+                
+                    Computational Lexicography
+                
+            
+        
+    
+
+
+2023-01-19 12:44:55,988 INFO c.s.p.DOMLoop [main] 
+Node Name =student [OPEN]
+2023-01-19 12:44:55,988 INFO c.s.p.DOMLoop [main] Node Value =
+        Karl
+        Benz
+        karlbenz@gmail.com
+        29
+    
+2023-01-19 12:44:55,988 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 12:44:55,988 INFO c.s.p.DOMLoop [main] attr value : 1
+2023-01-19 12:44:55,989 INFO c.s.p.DOMLoop [main] 
+Node Name =firstname [OPEN]
+2023-01-19 12:44:55,989 INFO c.s.p.DOMLoop [main] Node Value =Karl
+2023-01-19 12:44:55,989 INFO c.s.p.DOMLoop [main] Node Name =firstname [CLOSE]
+2023-01-19 12:44:55,989 INFO c.s.p.DOMLoop [main] 
+Node Name =lastname [OPEN]
+2023-01-19 12:44:55,989 INFO c.s.p.DOMLoop [main] Node Value =Benz
+2023-01-19 12:44:55,989 INFO c.s.p.DOMLoop [main] Node Name =lastname [CLOSE]
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] 
+Node Name =email [OPEN]
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] Node Value =karlbenz@gmail.com
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] Node Name =email [CLOSE]
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] 
+Node Name =age [OPEN]
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] Node Value =29
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] Node Name =age [CLOSE]
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] Node Name =student [CLOSE]
+2023-01-19 12:44:55,990 INFO c.s.p.DOMLoop [main] 
+Node Name =Session [OPEN]
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] Node Value =
+        19/01/2023
+        18:00
+        
+            Lexicography
+            
+                
+                    Metalexicography
+                
+                
+                    Computational Lexicography
+                
+            
+        
+    
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] attr value : 17
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] 
+Node Name =sessiondate [OPEN]
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] Node Value =19/01/2023
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] Node Name =sessiondate [CLOSE]
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] 
+Node Name =sessiontime [OPEN]
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] Node Value =18:00
+2023-01-19 12:44:55,991 INFO c.s.p.DOMLoop [main] Node Name =sessiontime [CLOSE]
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] 
+Node Name =course [OPEN]
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] Node Value =
+            Lexicography
+            
+                
+                    Metalexicography
+                
+                
+                    Computational Lexicography
+                
+            
+        
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] attr value : 701
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] 
+Node Name =coursetitle [OPEN]
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] Node Value =Lexicography
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] Node Name =coursetitle [CLOSE]
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] 
+Node Name =Modules [OPEN]
+2023-01-19 12:44:55,992 INFO c.s.p.DOMLoop [main] Node Value =
+                
+                    Metalexicography
+                
+                
+                    Computational Lexicography
+                
+            
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] 
+Node Name =module [OPEN]
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] Node Value =
+                    Metalexicography
+                
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] attr value : 3
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] 
+Node Name =moduletitle [OPEN]
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] Node Value =Metalexicography
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] Node Name =moduletitle [CLOSE]
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] Node Name =module [CLOSE]
+2023-01-19 12:44:55,993 INFO c.s.p.DOMLoop [main] 
+Node Name =module [OPEN]
+2023-01-19 12:44:55,994 INFO c.s.p.DOMLoop [main] Node Value =
+                    Computational Lexicography
+                
+2023-01-19 12:44:55,994 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 12:44:55,994 INFO c.s.p.DOMLoop [main] attr value : 4
+2023-01-19 12:44:55,994 INFO c.s.p.DOMLoop [main] 
+Node Name =moduletitle [OPEN]
+2023-01-19 12:44:55,994 INFO c.s.p.DOMLoop [main] Node Value =Computational Lexicography
+2023-01-19 12:44:55,994 INFO c.s.p.DOMLoop [main] Node Name =moduletitle [CLOSE]
+2023-01-19 12:44:55,995 INFO c.s.p.DOMLoop [main] Node Name =module [CLOSE]
+2023-01-19 12:44:55,995 INFO c.s.p.DOMLoop [main] Node Name =Modules [CLOSE]
+2023-01-19 12:44:55,995 INFO c.s.p.DOMLoop [main] Node Name =course [CLOSE]
+2023-01-19 12:44:55,995 INFO c.s.p.DOMLoop [main] Node Name =Session [CLOSE]
+2023-01-19 12:44:55,995 INFO c.s.p.DOMLoop [main] Node Name =Universitysquad [CLOSE]

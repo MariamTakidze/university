@@ -1,0 +1,2 @@
+2023-01-18 15:45:28,985 INFO c.s.u.ConnectionPooling [main] The connection was retrieved: com.mysql.cj.jdbc.ConnectionImpl@14dda234
+2023-01-18 15:45:29,002 INFO c.s.u.ConnectionPooling [main] Putting the connection back to Connection pooling: com.mysql.cj.jdbc.ConnectionImpl@14dda234

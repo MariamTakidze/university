@@ -1,0 +1,92 @@
+2023-01-19 09:04:59,276 INFO c.s.p.DOMLoop [main] Root Element :students
+2023-01-19 09:04:59,278 INFO c.s.p.DOMLoop [main] ------
+2023-01-19 09:04:59,278 INFO c.s.p.DOMLoop [main] 
+Node Name =students [OPEN]
+2023-01-19 09:04:59,279 INFO c.s.p.DOMLoop [main] Node Value =
+    
+        Karl
+        Benz
+        karlbenz@gmail.com
+        29
+    
+
+    
+        Thomas Alva
+        Edison
+        t.edison@yahoo.com
+        25
+    
+
+    
+        George B
+        Grant
+        grant.george@gmail.com
+        23
+    
+
+2023-01-19 09:04:59,279 INFO c.s.p.DOMLoop [main] 
+Node Name =student [OPEN]
+2023-01-19 09:04:59,290 INFO c.s.p.DOMLoop [main] Node Value =
+        Karl
+        Benz
+        karlbenz@gmail.com
+        29
+    
+2023-01-19 09:04:59,290 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 09:04:59,291 INFO c.s.p.DOMLoop [main] attr value : 1
+2023-01-19 09:04:59,291 INFO c.s.p.DOMLoop [main] 
+Node Name =firstname [OPEN]
+2023-01-19 09:04:59,291 INFO c.s.p.DOMLoop [main] Node Value =Karl
+2023-01-19 09:04:59,291 INFO c.s.p.DOMLoop [main] 
+Node Name =lastname [OPEN]
+2023-01-19 09:04:59,291 INFO c.s.p.DOMLoop [main] Node Value =Benz
+2023-01-19 09:04:59,292 INFO c.s.p.DOMLoop [main] 
+Node Name =email [OPEN]
+2023-01-19 09:04:59,292 INFO c.s.p.DOMLoop [main] Node Value =karlbenz@gmail.com
+2023-01-19 09:04:59,292 INFO c.s.p.DOMLoop [main] 
+Node Name =age [OPEN]
+2023-01-19 09:04:59,292 INFO c.s.p.DOMLoop [main] Node Value =29
+2023-01-19 09:04:59,292 INFO c.s.p.DOMLoop [main] 
+Node Name =student [OPEN]
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] Node Value =
+        Thomas Alva
+        Edison
+        t.edison@yahoo.com
+        25
+    
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] attr value : 2
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] 
+Node Name =firstname [OPEN]
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] Node Value =Thomas Alva
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] 
+Node Name =lastname [OPEN]
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] Node Value =Edison
+2023-01-19 09:04:59,293 INFO c.s.p.DOMLoop [main] 
+Node Name =email [OPEN]
+2023-01-19 09:04:59,294 INFO c.s.p.DOMLoop [main] Node Value =t.edison@yahoo.com
+2023-01-19 09:04:59,294 INFO c.s.p.DOMLoop [main] 
+Node Name =age [OPEN]
+2023-01-19 09:04:59,294 INFO c.s.p.DOMLoop [main] Node Value =25
+2023-01-19 09:04:59,294 INFO c.s.p.DOMLoop [main] 
+Node Name =student [OPEN]
+2023-01-19 09:04:59,294 INFO c.s.p.DOMLoop [main] Node Value =
+        George B
+        Grant
+        grant.george@gmail.com
+        23
+    
+2023-01-19 09:04:59,294 INFO c.s.p.DOMLoop [main] attr name : id
+2023-01-19 09:04:59,294 INFO c.s.p.DOMLoop [main] attr value : 3
+2023-01-19 09:04:59,295 INFO c.s.p.DOMLoop [main] 
+Node Name =firstname [OPEN]
+2023-01-19 09:04:59,295 INFO c.s.p.DOMLoop [main] Node Value =George B
+2023-01-19 09:04:59,295 INFO c.s.p.DOMLoop [main] 
+Node Name =lastname [OPEN]
+2023-01-19 09:04:59,295 INFO c.s.p.DOMLoop [main] Node Value =Grant
+2023-01-19 09:04:59,295 INFO c.s.p.DOMLoop [main] 
+Node Name =email [OPEN]
+2023-01-19 09:04:59,295 INFO c.s.p.DOMLoop [main] Node Value =grant.george@gmail.com
+2023-01-19 09:04:59,295 INFO c.s.p.DOMLoop [main] 
+Node Name =age [OPEN]
+2023-01-19 09:04:59,296 INFO c.s.p.DOMLoop [main] Node Value =23

@@ -1,0 +1,16 @@
+2023-01-25 14:42:29,081 ERROR c.s.j.LecturerJAXB [main] com.sun.xml.bind.v2.runtime.IllegalAnnotationsException: 4 counts of IllegalAnnotationExceptions
+Property lastname is present but not specified in @XmlType.propOrder
+	this problem is related to the following location:
+		at public java.lang.String com.solvd.models.Lecturers.getLastname()
+		at com.solvd.models.Lecturers
+Property startDate is present but not specified in @XmlType.propOrder
+	this problem is related to the following location:
+		at public java.util.Date com.solvd.models.Lecturers.getStartDate()
+		at com.solvd.models.Lecturers
+Property lastName appears in @XmlType.propOrder, but no such property exists. Maybe you meant lastname?
+	this problem is related to the following location:
+		at com.solvd.models.Lecturers
+Property date appears in @XmlType.propOrder, but no such property exists. Maybe you meant age?
+	this problem is related to the following location:
+		at com.solvd.models.Lecturers
+

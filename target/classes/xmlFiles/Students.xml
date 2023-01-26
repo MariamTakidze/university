@@ -1,0 +1,23 @@
+<?xml version = "1.0"?>
+<students>
+    <student id = "1">
+        <firstname>Karl</firstname>
+        <lastname>Benz</lastname>
+        <email>karlbenz@gmail.com</email>
+        <age>29</age>
+    </student>
+
+    <student id = "2">
+        <firstname>Thomas Alva</firstname>
+        <lastname>Edison</lastname>
+        <email>t.edison@yahoo.com</email>
+        <age>25</age>
+    </student>
+
+    <student id = "3">
+        <firstname>George B</firstname>
+        <lastname>Grant</lastname>
+        <email>grant.george@gmail.com</email>
+        <age>23</age>
+    </student>
+</students>

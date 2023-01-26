@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lecturers id="10">
+    <firstName>Maree</firstName>
+    <lastName>Gangoooooo</lastName>
+    <age>28</age>
+    <modules>
+        <modules>Metalexicography</modules>
+        <modules>Semantics</modules>
+        <modules>Terminology</modules>
+    </modules>
+    <date>1969-12-31T21:36:20.927-08:00</date>
+</lecturers>
