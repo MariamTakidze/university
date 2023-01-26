@@ -8,6 +8,9 @@ public class Rectors {
     private int phoneNumber;
     private int age;
 
+    public Rectors() {
+    }
+
     public Rectors(Long id, String firstName, String lastName, String email, int phoneNumber, int age) {
         this.id = id;
         this.firstName = firstName;
