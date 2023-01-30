@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "org/apache/ibatis/builder/xml/mybatis-3-mapper.dtd">
+<mapper namespace="com.solvd.dao.IStudentDAO">
+    <select id="get" parameterType="Long" resultMap="StudentsResult">
+        SELECT * FROM students WHERE Student_Id=#{id}
+    </select>
+    <resultMap id="StudentResult" type="Students" autoMapping="false">
+        <id property="id" column="Sudent_id"/>
+        <result property="name" column="Student_name"/>
+        <result property="surname" column="Student_surname"/>
+        <result property="email" column="Student_email"/>
+        <result property="age" column="age"/>
+    </resultMap>
+    <select id="getAll" resultMap="StudentsResult">
+        SELECT * FROM students
+    </select>
+
+</mapper>
