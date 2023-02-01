@@ -3,7 +3,13 @@ package com.solvd;
 import com.solvd.dao.IStudentDAO;
 import com.solvd.dao.jdbc.StudentDAO;
 import com.solvd.dao.jdbc.StudentDAOPS;
+//import com.solvd.dao.mybatis.StudentsDAO;
+import com.solvd.dao.mybatis.StudentsDAO;
 import com.solvd.models.Students;
+import com.solvd.services.IStudentsService;
+import com.solvd.services.serviceimpl.StudentServiceImpl;
+import org.apache.ibatis.exceptions.PersistenceException;
+import org.apache.ibatis.reflection.ReflectionException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,7 +18,7 @@ import java.util.List;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException, PersistenceException {
 //        Connection con = DBUtil.getConnection();
 //
 //        if (con != null) {
@@ -22,6 +28,34 @@ public class Main {
 //            System.out.println("Failed to connect.");
 //        }
 //
+
+
+        //////////////MyBatis --------------------------------------------------------------
+
+       IStudentsService student = new StudentServiceImpl();
+        Students students = student.get(1L);
+        LOGGER.info(students.getStudentName());
+        LOGGER.info(students.getStudentLastname());
+        LOGGER.info(students.getStudentEmail());
+        List<Students> stu = student.getAll();
+        stu.forEach(System.out::println);
+
+        //update
+//        Students updateStudent = new Students(5L,"Gio","Brunno","lola@123.gmail.com",35);
+//        student.update(updateStudent);
+
+        //delete
+
+
+//        StudentsDAO studentsDAO =  new StudentsDAO();
+//        //getById
+//         Students students = studentsDAO.get(3L);
+//         LOGGER.info(students);
+
+
+
+
+
 //        IStudentDAO iStudentDAO = new StudentDAOPS();
 
 
@@ -67,6 +101,9 @@ public class Main {
         //delete
 //        iStudentDAO.delete(iStudentDAO.get(6L));
 
+
+
+        //-----------------------------------------------------------------------------
 
 
     }

@@ -5,15 +5,30 @@
     <select id="get" parameterType="Long" resultMap="StudentsResult">
         SELECT * FROM students WHERE Student_Id=#{id}
     </select>
-    <resultMap id="StudentResult" type="Students" autoMapping="false">
-        <id property="id" column="Sudent_id"/>
-        <result property="name" column="Student_name"/>
-        <result property="surname" column="Student_surname"/>
-        <result property="email" column="Student_email"/>
+    <resultMap id="StudentsResult" type="Students" autoMapping="false">
+        <id property="id" column="Student_id"/>
+        <result   property="studentName" column="Student_name"/>
+        <result property="studentLastname" column="Student_surname"/>
+        <result property="studentEmail" column="Student_email"/>
         <result property="age" column="age"/>
     </resultMap>
     <select id="getAll" resultMap="StudentsResult">
         SELECT * FROM students
     </select>
+    <insert id = "insert" parameterType = "Students"  useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO students (studentName,studentLastname,studentEmail,age) VALUES (#{name}, #{surname}, #{email}, #{age});
+    </insert>
+    <update id = "update" parameterType = "Students">
+        UPDATE students
+        SET
+        name = #{studentName},
+        surname = #{studentLastname},
+        email = #{studentEmail},
+        age = #{age}
+        WHERE id =#{id}
+    </update>
+    <delete id="delete" parameterType="Long">
+        DELETE FROM students WHERE id= #{id}
+    </delete>
 
 </mapper>

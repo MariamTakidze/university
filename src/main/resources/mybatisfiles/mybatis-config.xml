@@ -14,15 +14,15 @@
                 <property name="defaultReadOnly" value="false"/>
             </transactionManager>
             <dataSource type="POOLED">
-                <property name="driver" value="${db.driver}"/>
+                <property name="driver" value="${driver.class.name}"/>
                 <property name="url" value="${db.url}"/>
-                <property name="username" value="${db.user}"/>
+                <property name="username" value="${db.username}"/>
                 <property name="password" value="${db.password}"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="student-mapper.xml"/>
-        <mapper resource=""/>
+        <mapper resource="mybatisfiles/mappers/student-mapper.xml"/>
+
     </mappers>
 </configuration>
