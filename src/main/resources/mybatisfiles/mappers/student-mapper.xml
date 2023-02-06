@@ -15,9 +15,9 @@
     <select id="getAll" resultMap="StudentsResult">
         SELECT * FROM students
     </select>
-<!--    <insert id = "insert" parameterType = "Students"  useGeneratedKeys="true" keyProperty="id">-->
-<!--        INSERT INTO students (studentName,studentLastname,studentEmail,age) VALUES (#{name}, #{surname}, #{email}, #{age});-->
-<!--    </insert>-->
+    <insert id = "insert" parameterType = "Students"  useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO students (Student_name,Student_surname,Student_email,age) VALUES (#{studentName}, #{studentLastname}, #{studentEmail}, #{age});
+    </insert>
     <update id = "update" parameterType = "Students">
         UPDATE Students
         SET

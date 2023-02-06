@@ -60,13 +60,17 @@ public class Main {
             LOGGER.info(s.getStudentEmail());
 
         }
-        //update
-        Students updateStudent = new Students(4L,"Mindia","Jikia","jikia109@mail.ru",35);
-        studentsDAOMybatis.update(updateStudent);
+        //insert
+        Students insertStudent = new Students(6L,"Giordano","Brunno","lola@123.gmail.com",35);
+        studentsDAOMybatis.insert(insertStudent);
 
-        //delete
-        Students deleteStudent = studentsDAOMybatis.get(5L);
-        studentsDAOMybatis.delete(deleteStudent);
+//        //update
+//        Students updateStudent = new Students(4L,"Mindia","Jikia","jikia109@mail.ru",35);
+//        studentsDAOMybatis.update(updateStudent);
+//
+//        //delete
+//        Students deleteStudent = studentsDAOMybatis.get(5L);
+//        studentsDAOMybatis.delete(deleteStudent);
 
 
 

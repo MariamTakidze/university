@@ -37,6 +37,19 @@ public class StudentsDao {
 
 
     }
+    public void insert(Students students) throws SQLException{
+        SqlSession sqlSession = MyBatisDAOFactory.getSqlSessionFactory().openSession();
+        try{
+            IStudentDAO studentDao =sqlSession.getMapper(IStudentDAO.class);
+            studentDao.insert(students);
+            sqlSession.commit();
+            LOGGER.info("insert it please");
+
+        }finally {
+            sqlSession.rollback();
+            sqlSession.close();
+        }
+    }
 
     public void update(Students students) throws SQLException{
         SqlSession sqlSession = MyBatisDAOFactory.getSqlSessionFactory().openSession();
