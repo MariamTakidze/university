@@ -1,15 +1,11 @@
 package com.solvd;
 
-import com.solvd.dao.IStudentDAO;
-import com.solvd.dao.jdbc.StudentDAO;
-import com.solvd.dao.jdbc.StudentDAOPS;
 //import com.solvd.dao.mybatis.StudentsDAO;
-import com.solvd.dao.mybatis.StudentsDAO;
+import com.solvd.dao.mybatis.StudentsDao;
 import com.solvd.models.Students;
-import com.solvd.services.IStudentsService;
-import com.solvd.services.serviceimpl.StudentServiceImpl;
+//import com.solvd.services.serviceimpl.StudentServiceImpl;
+import org.apache.ibatis.executor.ExecutorException;
 import org.apache.ibatis.exceptions.PersistenceException;
-import org.apache.ibatis.reflection.ReflectionException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -32,29 +28,52 @@ public class Main {
 
         //////////////MyBatis --------------------------------------------------------------
 
-       IStudentsService student = new StudentServiceImpl();
-        Students students = student.get(1L);
-        LOGGER.info(students.getStudentName());
-        LOGGER.info(students.getStudentLastname());
-        LOGGER.info(students.getStudentEmail());
-        List<Students> stu = student.getAll();
-        stu.forEach(System.out::println);
+//       IStudentsService student = new StudentServiceImpl();
+//        Students students = student.get(1L);
+//        LOGGER.info(students.getStudentName());
+//        LOGGER.info(students.getStudentLastname());
+//        LOGGER.info(students.getStudentEmail());
+//        List<Students> stu = student.getAll();
+//        stu.forEach(System.out::println);
 
         //update
 //        Students updateStudent = new Students(5L,"Gio","Brunno","lola@123.gmail.com",35);
 //        student.update(updateStudent);
 
+
+
+        StudentsDao studentsDAOMybatis =  new StudentsDao();
+        //getById
+         Students stu = studentsDAOMybatis.get(3L);
+         LOGGER.info(stu.getAge());
+         LOGGER.info(stu.getStudentLastname());
+         LOGGER.info(stu.getStudentEmail());
+        LOGGER.info(stu.getStudentName());
+
+        //getall
+//
+        for (Students s: studentsDAOMybatis.getAll()) {
+//            LOGGER.info(s.getId());
+            LOGGER.info(s.getStudentName());
+            LOGGER.info(s.getStudentLastname());
+            LOGGER.info(s.getAge());
+            LOGGER.info(s.getStudentEmail());
+
+        }
+        //update
+        Students updateStudent = new Students(4L,"Mindia","Jikia","jikia109@mail.ru",35);
+        studentsDAOMybatis.update(updateStudent);
+
         //delete
-
-
-//        StudentsDAO studentsDAO =  new StudentsDAO();
-//        //getById
-//         Students students = studentsDAO.get(3L);
-//         LOGGER.info(students);
+        Students deleteStudent = studentsDAOMybatis.get(5L);
+        studentsDAOMybatis.delete(deleteStudent);
 
 
 
 
+
+
+         //=============================================
 
 //        IStudentDAO iStudentDAO = new StudentDAOPS();
 

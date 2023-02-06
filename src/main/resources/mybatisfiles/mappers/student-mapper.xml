@@ -15,20 +15,20 @@
     <select id="getAll" resultMap="StudentsResult">
         SELECT * FROM students
     </select>
-    <insert id = "insert" parameterType = "Students"  useGeneratedKeys="true" keyProperty="id">
-        INSERT INTO students (studentName,studentLastname,studentEmail,age) VALUES (#{name}, #{surname}, #{email}, #{age});
-    </insert>
+<!--    <insert id = "insert" parameterType = "Students"  useGeneratedKeys="true" keyProperty="id">-->
+<!--        INSERT INTO students (studentName,studentLastname,studentEmail,age) VALUES (#{name}, #{surname}, #{email}, #{age});-->
+<!--    </insert>-->
     <update id = "update" parameterType = "Students">
-        UPDATE students
+        UPDATE Students
         SET
-        name = #{studentName},
-        surname = #{studentLastname},
-        email = #{studentEmail},
+        Student_name = #{studentName},
+        Student_surname = #{studentLastname},
+        Student_email = #{studentEmail},
         age = #{age}
-        WHERE id =#{id}
+        WHERE Student_id =#{id}
     </update>
     <delete id="delete" parameterType="Long">
-        DELETE FROM students WHERE id= #{id}
+        DELETE FROM students WHERE Student_Id= #{id}
     </delete>
 
 </mapper>
